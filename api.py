@@ -35,4 +35,5 @@ def get_tutorials():
     return jsonify(tutorials)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Use Gunicorn to run the app in production, no need to call app.run here.
+    pass
